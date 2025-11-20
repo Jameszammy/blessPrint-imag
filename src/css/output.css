@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-700: oklch(55.5% 0.163 48.998);
@@ -18,7 +17,6 @@
     --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-7xl: 80rem;
@@ -215,9 +213,6 @@
   }
   .mt-96 {
     margin-top: calc(var(--spacing) * 96);
-  }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
@@ -493,24 +488,9 @@
       }
     }
   }
-  .sm\:ml-2 {
-    @media (width >= 40rem) {
-      margin-left: calc(var(--spacing) * 2);
-    }
-  }
   .sm\:ml-20 {
     @media (width >= 40rem) {
       margin-left: calc(var(--spacing) * 20);
-    }
-  }
-  .sm\:ml-26 {
-    @media (width >= 40rem) {
-      margin-left: calc(var(--spacing) * 26);
-    }
-  }
-  .sm\:ml-28 {
-    @media (width >= 40rem) {
-      margin-left: calc(var(--spacing) * 28);
     }
   }
   .sm\:px-6 {
@@ -526,16 +506,6 @@
   .md\:mt-20 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 20);
-    }
-  }
-  .md\:mt-60 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 60);
-    }
-  }
-  .md\:ml-5 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 5);
     }
   }
   .md\:ml-10 {
@@ -558,11 +528,6 @@
       margin-left: calc(var(--spacing) * 30);
     }
   }
-  .md\:ml-32 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 32);
-    }
-  }
   .md\:ml-34 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 34);
@@ -581,11 +546,6 @@
   .md\:ml-88 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 88);
-    }
-  }
-  .md\:ml-100 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 100);
     }
   }
   .md\:ml-116 {
@@ -628,24 +588,19 @@
       padding-inline: calc(var(--spacing) * 16);
     }
   }
-  .lg\:mt-10 {
+  .lg\:mt-20 {
     @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 10);
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:mt-48 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 48);
     }
   }
   .lg\:mt-60 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 60);
-    }
-  }
-  .lg\:ml-5 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 5);
-    }
-  }
-  .lg\:ml-32 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 32);
     }
   }
   .lg\:ml-100 {
@@ -656,23 +611,6 @@
   .lg\:px-8 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 8);
-    }
-  }
-  .md\:lg\:ml-100 {
-    @media (width >= 48rem) {
-      @media (width >= 64rem) {
-        margin-left: calc(var(--spacing) * 100);
-      }
-    }
-  }
-  .xl\:mt-60 {
-    @media (width >= 80rem) {
-      margin-top: calc(var(--spacing) * 60);
-    }
-  }
-  .xl\:ml-100 {
-    @media (width >= 80rem) {
-      margin-left: calc(var(--spacing) * 100);
     }
   }
 }
