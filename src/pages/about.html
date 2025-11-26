@@ -7,6 +7,50 @@
     <link rel="stylesheet" href="/src/css/output.css">
 </head>
 <body>
+      <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#" class="text-2xl font-bold text-indigo-600">Logo</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <ul class="flex space-x-8">
+            <li><a href="/index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">Home</a></li>
+            <li><a href="/src/pages/about.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">About</a></li>
+            <li><a href="/src/pages/leandingpage.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">Services</a></li>
+            <li><a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition">Contact</a></li>
+            <li><a href="/src/pages/login.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">LogOut</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <label for="menu-toggle" class="cursor-pointer">
+            <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <div class="md:hidden hidden peer-checked:block bg-white border-t">
+      <ul class="px-6 py-4 space-y-4">
+        <li><a href="/index.html" class="block text-gray-700 hover:text-indigo-600 font-medium text-lg">Home</a></li>
+        <li><a href="/src/pages/about.html" class="block text-gray-700 hover:text-indigo-600 font-medium text-lg">About</a></li>
+        <li><a href="/src/pages/leandingpage.html" class="block text-gray-700 hover:text-indigo-600 font-medium text-lg">Services</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-indigo-600 font-medium text-lg">Contact</a></li>
+        <li><a href="/src/pages/login.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">LogOut</a></li>
+      </ul>
+    </div>
+  </nav>
     <section>
     <h1 class="md:text-2xl font-bold p-8 bg-blue-800 text-amber-50 ">KNOW MORE ABOUT US</h1>
     <div class="md:ml-5 md:mr-10 p-6">

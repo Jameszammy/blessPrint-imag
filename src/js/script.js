@@ -55,7 +55,6 @@ function vaildtion() {
     let savedPassword = localStorage.getItem("userPassword");
 
     if (email === savedEmail && password === savedPassword) {
-        
         window.location.href = "leandingpage.html";
     } else {
         error.textContent = "Invalid email or password!";
@@ -65,6 +64,7 @@ function vaildtion() {
 button.addEventListener('click', vaildtion);
 
 }
+
 
 
 
