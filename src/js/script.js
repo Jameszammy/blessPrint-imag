@@ -66,6 +66,30 @@ button.addEventListener('click', vaildtion);
 }
 
 
+const list = document.querySelectorAll('.navbar a');
+list.forEach(item=>{
+    item.addEventListener('mouseover', ()=>{
+item.style.color="blue";
+    });
+    item.addEventListener('mouseout', ()=>{
+item.style.color="";
+    });
+
+})
+const list1 = document.querySelectorAll('.navbar1 a');
+list1.forEach(item=>{
+    item.addEventListener('mouseover', ()=>{
+item.style.color="blue";
+    });
+    item.addEventListener('mouseout', ()=>{
+item.style.color="";
+    });
+
+})
+
+
+
+
 
 
 
