@@ -6,8 +6,50 @@
     <title>contact</title>
     <link rel="stylesheet" href="/src/css/output.css">
 </head>
-<body class="bg-black">
-    <section class="bg-gray-400 py-16">
+<body>
+       <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#" class="text-2xl font-bold text-indigo-600">Logo</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block" id="niv">
+          <ul class="flex space-x-8">
+            <li class="navbar"><a href="/index.html" >Home</a></li>
+            <li class="navbar"><a href="/src/pages/about.html" >About</a></li>
+            <li class="navbar"><a href="/src/pages/leandingpage.html" >Services</a></li>
+            <li class="navbar"><a href="/src/pages/login.html">LogOut</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <label for="menu-toggle" class="cursor-pointer">
+            <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <div class="md:hidden hidden peer-checked:block bg-white border-t">
+      <ul class="px-6 py-4 space-y-4">
+        <li class="navbar"><a href="/index.html" >Home</a></li>
+            <li class="navbar"><a href="/src/pages/about.html" >About</a></li>
+            <li class="navbar"><a href="/src/pages/leandingpage.html" >Services</a></li>
+            <li class="navbar"><a href="/src/pages/login.html">LogOut</a></li>
+      </ul>
+    </div>
+  </nav>
+    <section class="bg-gray-300 py-16 -mt-10">
   <div class="max-w-5xl mx-auto px-6">
     <h2 class="text-4xl font-bold text-center mb-10">Contact Us</h2>
 
@@ -19,9 +61,9 @@
         <p class="mb-4 text-gray-700">We would love to hear from you! Reach out using any method below.</p>
 
         <ul class="space-y-4 text-gray-700">
-          <li><strong>📍 Address:</strong> Kigali, Rwanda</li>
-          <li><strong>📞 Phone:</strong> +250 780 000 000</li>
-          <li><strong>📧 Email:</strong> info@example.com</li>
+          <li><strong>📍 Address:</strong> Gadnersville, Iron Factory, Monrovia</li>
+          <li><strong>📞 Phone:</strong> +231888078693</li>
+          <li><strong>📧 Email:</strong> jzammy98@gmail.com</li>
         </ul>
       </div>
 
