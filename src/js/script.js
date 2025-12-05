@@ -89,6 +89,28 @@ item.style.color="";
 
 
 
+const images=['./src/img/shoot.jpeg','./src/img/flex.jpeg'];
+
+const changeAfterHour = 1;
+
+let lastChange = localStorage.getItem('lastChangeHour');
+let index = parseInt(localStorage.getItem('imageIndex'))||0;
+
+function updateImage(){
+    const today = new Date.now();
+
+    if(!lastChange||(today - lastChange)>(changeAfterHour * 60 * 60 * 1000)){
+        index = (index + 1) % images.length;
+        localStorage.setItem("imageIndex",index);
+        localStorage.setItem("lastChangeHour", today);
+    }
+     document.getElementById('imgupdate').style.backgroundImage= `url('${images[index]}')`;
+}
+updateImage();
+
+
+
+
 
 
 
