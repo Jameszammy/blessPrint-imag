@@ -108,6 +108,26 @@ function updateImage(){
 }
 updateImage();
 
+const parent = document.getElementById("paraBox");
+
+parent.addEventListener("mouseover", function (e) {
+
+    // Check if the hovered element is a box
+    if (e.target.closest("div[id^='box']")) {
+        let box = e.target.closest("div[id^='box']");
+        box.style.transform = "scale(1.05)";
+        box.style.transition = "0.3s";
+    }
+});
+
+parent.addEventListener("mouseout", function (e) {
+
+    if (e.target.closest("div[id^='box']")) {
+        let box = e.target.closest("div[id^='box']");
+        box.style.transform = "scale(1)";
+    }
+});
+
 
 
 
